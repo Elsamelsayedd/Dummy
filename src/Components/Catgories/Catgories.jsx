@@ -36,7 +36,7 @@ export default function Catgories() {
     return (
         <>
             <div className='md:flex flex-wrap gap-3 w-full mx-auto text-center  mb-5'>
-                {catgories.length ? catgories.map((category, index) => <Link to={category.slug} key={index} className='bg-white cursor-pointer rounded-xl xl:w-[19%] lg:w-[32%]  md:w-[48%] shadow-xl mb-4 text-center px-4  py-10 hover:-translate-y-2.5 duration-700'>
+                {catgories.length ? catgories.map((category, index) => <Link to={category.slug} key={index} className='bg-white cursor-pointer rounded-xl xl:w-[19%] lg:w-[32%]  md:w-[48%] shadow-xl mb-4 text-center md:px-4  md:py-10 hover:-translate-y-2.5 duration-700'>
                     <h4 className='text-xl font-semibold mb-2'>⚡ {category.name}</h4>
                 </Link>) :
                     <div className='absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center'>
