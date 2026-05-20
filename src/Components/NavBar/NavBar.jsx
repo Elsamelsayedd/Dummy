@@ -8,9 +8,9 @@ export default function NavBar() {
     return (
         <>
 
-            <div className="bg-amber-500 fixed z-20 top-0 w-full px-4 border-b border-default">
+            <div className="bg-mauve-900 fixed z-20 top-0 w-full px-4 border-b border-default">
                 <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link className='text-2xl'>Dummy</Link>
+                    <Link className='text-2xl text-white'>Dummy</Link>
 
                     <button >
 
@@ -20,7 +20,7 @@ export default function NavBar() {
                         <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
                     </button>
                     <div className={`${isOpen ? 'block' : 'hidden'}  w-full md:block md:w-auto`} id="navbar-default">
-                        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+                        <ul className="font-medium text-white flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
                             <li>
                                 <NavLink to={''} onClick={() => setIsOpen(false)} className="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">About</NavLink>
                             </li>

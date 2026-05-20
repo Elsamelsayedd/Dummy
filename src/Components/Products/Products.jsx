@@ -48,8 +48,10 @@ export default function Products() {
                     </div>
                     <p className='font-semibold mb-2'>{product.title}</p>
                     <p>$ {product.price}</p>
-                    <button to={'/contact'} className='bg-black text-white my-4 px-4 py-2 rounded-xl '>Add to cart</button>
+                    <div className='bg-black text-white my-4 px-4 py-2 w-1/2 mx-auto rounded-xl '>
+                        <Link to={'/contact'} >Add to cart</Link>
 
+                    </div>
                 </Link>) : <div className='absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center'>
 
                     <RotatingLines
